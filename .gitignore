@@ -1,0 +1,8 @@
+! .gitignore
+.idea/*
+app/config/config.local.neon
+vendor
+temp/cache/*
+log/*
+! log/.htaccess
+! log/web.config

@@ -1,38 +1,88 @@
 body {
-	font: 16px/1.5 Georgia, Verdana, Arial;
-	margin: 0 auto;
-	width: 600px;
-	color: #333;
-	background-color: #fff;
+    font: 16px/1.5 Georgia, Verdana, Arial;
+    margin: 0 auto;
+    width: 600px;
+    background-color: whitesmoke;
+}
+
+.date {
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+a {
+    color: darkcyan;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: black;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: black;
+    font-style: italic;
+    margin-bottom: 5px;
 }
 
 div.flash {
-	color: black;
-	background: #FFF9D7;
-	border: 1px solid #E2C822;
-	padding: 1em;
-	margin: 1em 0;
+    color: orangered;
+    border: 1px solid orangered;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 5px;
+
 }
 
 a[href^="#error:"] {
-	background: red;
-	color: white;
+    background: orangered;
+    color: white;
 }
 
 form th, form td {
-	vertical-align: top;
-	font-weight: normal;
+    vertical-align: top;
+    font-weight: normal;
 }
 
 form th {
-	text-align: right;
+    text-align: right;
 }
 
 form .required label {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 form .error {
-	color: #D00;
-	font-weight: bold;
+    color: orangered;
+    font-weight: bold;
+}
+
+div.post {
+    border-bottom: 2px solid gainsboro;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+p{
+    font-style: italic;
+    font-size: smaller;
 }

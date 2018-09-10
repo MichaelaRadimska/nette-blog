@@ -1,11 +1,15 @@
 {block content}
-<h1 n:block="title">Můj blog</h1>
-{foreach $posts as $post}
-<div class="post">
-<div class="date">{$post->created_at|date:'F j, Y'}</div>
-
-<h2><a href="{link Post:show $post->id}>{$post->title}</a></h2>
-<div>{$post->content}</div>
-</div>
-{/foreach}
+    <h1 n:block="title">Pratchettovky</h1>
+    <div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+    <p>Neuvěřitelná snůška absurdit a zlomyslností plná pseudohrdinů, pseudozločinců a pseudokouzel. Nic není jak má
+        být... tohle není lecjaká fantasy nebo science fiction. Terry Pratchett zbořil veškeré známé jistoty světa
+        reálného i fantastického. <a
+                href='https://www.databazeknih.cz/knihy/uzasna-zemeplocha-uzasna-plochozem-barva-kouzel-452'
+                target="_blank">Rihatama</a></p>
+    <a n:href="Post:create" n:if="$user->loggedIn">Napsat nový příspěvek</a>
+    <div n:foreach="$posts as $post" class="post">
+        <div class="date">{$post->created_at|date:'F j, Y'}</div>
+        <h2><a n:href="Post:show $post->id">{$post->title}</a></h2>
+        <div>{$post->content|truncate:65}</div>
+    </div>
 {/block}

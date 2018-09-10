@@ -13,8 +13,15 @@ session:
 
 services:
 	router: App\RouterFactory::createRouter
+	- App\Model\ArticleManager
+
 
 database:
-	dsn: 'pgsql:host=127.0.01; dbname=quickstart'
+	dsn: 'pgsql:host=127.0.0.1; dbname=quickstart'
 	user: quickstart
-	password: k0lib59ci
+	password: dE5k7BNl4V
+
+
+security:
+    users:
+        admin: Ker6tZpMu9v  # user 'admin', password 'Ker6tZpMu9v'
